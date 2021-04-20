@@ -1,0 +1,9 @@
+{
+    "name": "romarioarruda/generator-teste",
+    "description": "Testando generators",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    }
+}
