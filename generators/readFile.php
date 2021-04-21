@@ -1,8 +1,8 @@
 <?php
 
 use App\ReadFileType;
-use App\LeitorArquivoCsv;
+use App\ReadFileCsv;
 
 require_once "vendor/autoload.php";
 
-new ReadFileType(new LeitorArquivoCsv('linhas.csv'));
+new ReadFileType(new ReadFileCsv('linhas.csv'));

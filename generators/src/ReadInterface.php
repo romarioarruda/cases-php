@@ -4,5 +4,5 @@ namespace App;
 
 interface ReadInterface
 {
-    public function lerArquivoCompleto(): iterable;
+    public function readFileComplete(): iterable;
 }
