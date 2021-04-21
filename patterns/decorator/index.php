@@ -5,10 +5,13 @@ use Pattern\Frances;
 use Pattern\Baguete;
 use Pattern\Salame;
 use Pattern\Calabresa;
+use Pattern\QueijoParmesao;
 
 
 $frances = new Calabresa(
-    new Salame(new Frances)
+    new Salame(
+        new QueijoParmesao(new Frances)
+    )
 );
 echo $frances->getNome() . ' = R$ ' . $frances->valor();
 
