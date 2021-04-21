@@ -1,0 +1,9 @@
+{
+    "name": "romarioarruda/pattern-decorator",
+    "description": "Testando decorator",
+    "autoload": {
+        "psr-4": {
+            "Pattern\\": "src"
+        }
+    }
+}
