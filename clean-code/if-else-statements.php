@@ -22,7 +22,7 @@ function exampleTwo($type) {
         'alert' => 'alert'
     ];
     
-    return $typeList[$type] ?? 'undefined';
+    return $typeList[$type] ?? 'success';
 }
 
 echo exampleTwo('dangesr');
