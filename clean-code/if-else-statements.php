@@ -22,10 +22,10 @@ function exampleTwo($type) {
         'alert' => 'alert'
     ];
     
-    return $typeList[$type];
+    return $typeList[$type] ?? 'undefined';
 }
 
-echo exampleTwo('danger');
+echo exampleTwo('dangesr');
 echo "\n==================\n";
 
 function exampleThree($type) {
