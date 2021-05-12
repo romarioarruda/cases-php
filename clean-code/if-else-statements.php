@@ -15,7 +15,20 @@ function exampleOne($type) {
 echo exampleOne('warning');
 echo "\n==================\n";
 
-function RefactoredExample($type) {
+function exampleTwo($type) {
+    $typeList = [
+        'danger' => 'danger',
+        'warning' => 'warning',
+        'alert' => 'alert'
+    ];
+    
+    return $typeList[$type];
+}
+
+echo exampleTwo('danger');
+echo "\n==================\n";
+
+function exampleThree($type) {
     return [
         'danger' => 'danger',
         'warning' => 'warning',
@@ -23,5 +36,5 @@ function RefactoredExample($type) {
     ][$type] ?? 'success';
 }
 
-echo RefactoredExample('dangesr');
+echo exampleThree('dangesr');
 echo "\n";
